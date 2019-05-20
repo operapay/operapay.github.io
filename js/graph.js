@@ -87,7 +87,7 @@ Highcharts.chart('pie', {
             name: 'หนี้หน่วยงานของรัฐ (รัฐบาลค้ำประกัน+รัฐบาลไม่ค้ำประกัน)',
             y: 8397.96,
             selected: false,
-            color: Highcharts.getOptions().colors[3]
+            color: Highcharts.getOptions().colors[2]
         }],
         showInLegend: true
     }]
@@ -99,7 +99,7 @@ Highcharts.chart('stack', {
         type: 'column'
     },
     title: {
-        text: 'หนี้สาธารณะคงค้าง, 2552-2562'
+        text: 'หนี้สาธารณะคงค้าง, 2552-2561'
     },
     subtitle: {
         text: 'แหล่งข้อมูล: http://www.pdmo.go.th/th'
@@ -128,13 +128,16 @@ Highcharts.chart('stack', {
     },
     series: [{
         name: 'รัฐบาลกู้เพื่อชดเชยความเสียหายของ FIDF',
-        data: [1131803.42, 1126523.24, 1142100.87, 1133131.85, 1108070.25, 1073851.84, 998790.81, 949098.81, 891490.71, 845037.21]
+        data: [1131803.42, 1126523.24, 1142100.87, 1133131.85, 1108070.25, 1073851.84, 998790.81, 949098.81, 891490.71, 845037.21],
+        color: Highcharts.getOptions().colors[3]
     }, {
         name: 'รัฐวิสาหกิจ',
-        data: [1108580.32, 1083982.57, 1079748.57, 1064287.82, 1112973.85, 1087393.88, 1065199.18, 994794.29, 970216.31, 945129.74]
+        data: [1108580.32, 1083982.57, 1079748.57, 1064287.82, 1112973.85, 1087393.88, 1065199.18, 994794.29, 970216.31, 945129.74],
+        color: Highcharts.getOptions().colors[5]
     },{
         name: 'รัฐวิสาหกิจที่เป็นสถาบันการเงิน (รัฐบาลค้ำประกัน)',
-        data: [208702.02, 177179.43, 156941.96, 352207.35, 541932.01, 626508.19, 542296.35, 500054.33, 426321.04, 367634.93]
+        data: [208702.02, 177179.43, 156941.96, 352207.35, 541932.01, 626508.19, 542296.35, 500054.33, 426321.04, 367634.93],
+        color: Highcharts.getOptions().colors[2]
     },
     {
         name: 'รัฐบาลกู้โดยตรง',
@@ -174,13 +177,13 @@ Highcharts.chart('scatter', {
         title: {
             text: 'หนี้สาธารณะคงค้าง',
             style: {
-                color: Highcharts.getOptions().colors[0]
+                color: Highcharts.getOptions().colors[1]
             }
         },
         labels: {
             format: '{value} ลบ',
             style: {
-                color: Highcharts.getOptions().colors[0]
+                color: Highcharts.getOptions().colors[1]
             }
         },
         opposite: true
@@ -206,5 +209,6 @@ Highcharts.chart('scatter', {
         name: 'GDP',
         type: 'scatter',
         data:  [9658656, 10808151, 11306894,12357338, 12915162,13230301,13747007,14533475,15452882],
+        color: Highcharts.getOptions().colors[5]
     }]
 });
